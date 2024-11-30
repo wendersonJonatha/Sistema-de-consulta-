@@ -2,8 +2,6 @@ package consultas.consulta.clinica.com.br.model;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
-import java.util.Date;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -35,7 +33,7 @@ public class Consulta {
     private  LocalTime horaDaConsulta;
 
     @Column(columnDefinition = "TEXT")
-    private String descricao;
+    private String descricao; 
 
     @ManyToOne
     @JoinColumn(name = "idMedico")
